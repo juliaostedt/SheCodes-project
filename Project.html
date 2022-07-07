@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher & Dimitra Foods</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #decd9e 100%);
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        color: #302e2a;
+      }
+      h1 {
+        text-align: center;
+        color: #decd9e;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 34px;
+        line-height: 1.1em;
+        letter-spacing: -1.5px;
+      }
+      h2 {
+        text-align: center;
+        color: #ae7c5c;
+        font-weight: lighter;
+        font-size: 20px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        margin: 20px 0 20px;
+      }
+      button {
+        display: block;
+        margin: 40px auto;
+        background: #ae7c5c;
+        color: white;
+        font-size: 15px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .special-heading {
+        font-family: "Baskerville", "Palatino Linotype", "Palatino",
+          "Times New Roman", serif;
+        font-style: italic;
+        color: #ae7c5c;
+      }
+      .poured-oil {
+        display: block;
+        margin: 0 auto;
+        max-width: 55%;
+        border-radius: 300px;
+      }
+      .sortiment-pic {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+        border-radius: 300px;
+      }
+      .read-more {
+        text-decoration: none;
+        font-size: 13px;
+      }
+      a:visited {
+        color: #ae7c5c;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">
+        Christopher <span class="special-heading">&</span><br />Dimitra foods
+      </h1>
+      <hr />
+      <h2>Sparta Extra Virgin Olive Oil</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/350/original/olivolja-2.jpg?1632043724"
+        alt="olivolja"
+        class="poured-oil"
+      />
+      <p>
+        <strong>Virgin Olive Oil</strong> produceras på södra Peloponnesos i
+        Grekland. Oliverna växer på de östra sluttningarna av berget Taygetos på
+        en höjd av 300-600 m.ö.h. där jorden, luftfuktigheten och klimatet är
+        mycket gynnsamt för olivträden samt tillgången på rent vatten från
+        berget är god. Produktionen sker endast med gamla beprövade
+        skördemetoder och oliverna plockas tidigt på säsongen
+        (november/december) samt kallpressas vid låg temperatur (max 27 °C) för
+        att nå högsta kvalitet och sin intensiva smak. Vår olivolja säljs endast
+        i plåtburkar av två enkla, men viktiga skäl – olivoljans hållbarhet är
+        mycket bättre i en förpackning som inte släpper igenom något ljus samt
+        av miljöskäl – glasflaskor är tyngre och mera skrymmande vilket påverkar
+        frakten och därmed miljön negativt.
+      </p>
+      <a href="https://dimitragourmet.com/" target="_blank" class="read-more"
+        >Läs mer på vår hemsida</a
+      >
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/349/original/dimitra-gourmet-olivolja23-500.jpg?1632037070"
+        alt="sortiment"
+        class="sortiment-pic"
+      />
+      <button class="contact-us">Kontakta oss här</button>
+      <p class="footer">
+        Hemsidan är skapad av
+        <a
+          href="https://www.linkedin.com/in/juliaostedt/"
+          target="_blank"
+          class="footer-link"
+          >Julia Östedt</a
+        >
+      </p>
+    </div>
+    <script>
+      function contact() {
+        let approve = prompt("Vill du att vi kontaktar dig?");
+        if (approve === "Yes" || approve === "Ja") {
+          let name = prompt("Vad är ditt namn?");
+          prompt("Vad är din mejladress?");
+          alert("Tack " + name + ", vi återkommer! 👋");
+        } else {
+          alert("Ok, ha en bra dag! 🌻");
+        }
+      }
+      let contactButton = document.querySelector(".contact-us");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
